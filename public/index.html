@@ -8,9 +8,92 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
     <title>Email Template</title>
+    <!-- Bulma -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>  -->
 </head>
 
-<body style="margin:0;padding:0;">
+<style>
+    /* Use a media query to add a breakpoint at 641px: */
+    @media screen and (max-width: 641px) {
+        .logo {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* .tabel {
+                text-align: center
+            } */
+
+
+        td {
+            overflow: hidden;
+        }
+
+        .coldRow {
+            width: 100%;
+            display: flex;
+            padding: 3%;
+            margin-left: 5%;
+        }
+
+        span {
+            padding: 1%;
+        }
+
+        .extraStat {
+            display: none;
+        }
+
+        /* .desc {
+
+            } */
+        /* 
+            .param {
+
+            } */
+        .btm {
+            width: 10%;
+        }
+
+        /* .icon {
+                display: block;
+                width: 50%;
+            } */
+        .dates {
+            margin: 1%;
+        }
+
+        .cal {
+            padding-left: 20%;
+        }
+
+        .visit {
+            /* padding-right: 130px; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .disclaimer {
+            width: 100%;
+            padding-right: 100px;
+            overflow: hidden;
+        }
+
+        .lilLogo {
+            /* float: none; */
+            display: none
+        }
+
+        .house {
+            display: none;
+        }
+    }
+</style>
+
+<body class="box has-text-centered">
 
     <table cellspacing="0" cellpadding="0" width="100%">
         <tr>
@@ -19,71 +102,83 @@
                 <table cellspacing="0" cellpadding="0" width="600">
                     <!-- header -->
                     <tr>
-                        <td width="600">
-                            <img src="http://groundenergysupport.com/includes/img/interface/logo.png" width="157"
-                                height="56" align="right" />
-                        </td>
+
+                        <img class="logo" src="http://groundenergysupport.com/includes/img/interface/logo.png"
+                            width="157" height="56" align="right" />
+
                     </tr>
 
 
 
                     <!-- Main Data -->
                     <tr>
-                        <td >
+                        <td class="tabel">
                             <!-- User info table-->
                             <table cellspacing="0" cellpadding="0" border="0" width="560" align="center">
-                                <tr>
+                                <tr class="head">
 
-                                    <td rowspan="3" width="116" style="line-height:0;"><img
+                                    <td class="house" rowspan="3" width="116" style="line-height:0;"><img
                                             src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/rsz_ghp.png"
                                             border="1" style="border:0px solid #e6e6e6;" width="96" height="96" /></td>
-                                    
-                                            <td colspan="2" align="left" style="color:#343333;font-size:24px;" valign="top">
-                                        
-                                        
+
+                                    <td colspan="2" align="left" style="color:#343333;font-size:24px;" valign="top">
+
+
                                         <!-- Monthly geo report -->
-                                                <span
-                                            style="font-size:22px;color:#343333;font-weight:bold;white-space:nowrap;">Monthly
+                                        <span class="header">Monthly
                                             Geo Report
                                             for Durham NH #2</span>
                                     </td>
                                 </tr>
 
-                                
+
                                 <tr>
 
-                                    <td colspan="2" align="left" style="color:#959595;font-size:12px;">
-                                        <b>Mar 25, 2015</b> to <b>Apr 30, 2015</b>
+                                    <td class="cal" colspan="2" align="left" style="color:#959595;font-size:12px;">
+
+                                        <b class="dates">Mar 25, 2015</b> to <b class="dates">Apr 30, 2015</b>
                                         <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/calendar-icon.gif"
                                             hspace="5" />
                                     </td>
                                 </tr>
-                                <tr>
+
+
+                                <tr class="coldRow">
                                     <td colspan="2">
                                         <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
                                             <tr>
+
+                                                <!-- <div > -->
                                                 <td style="border-top:2px solid #2DA4C4;" bgcolor="#FFF" align="left">
                                                     <span style="color:#2DA4C4;font-size:9px;">COLDEST DAY</span><br />
                                                     <span style="color:#333333;font-size:14px;font-weight:bold;">Mar
                                                         29</span>
                                                 </td>
+
                                                 <td style="border-top:2px solid #2DA4C4;" bgcolor="#FFF" align="left">
                                                     <span style="color:#2DA4C4;font-size:9px;">Daily Avg</span><br />
                                                     <span style="color:#333333;font-size:14px;font-weight:bold;">31
                                                         &#176;F</span>
                                                 </td>
-                                                <td style="border-top:2px solid #2DA4C4;line-height:0px;" width="60"
+
+                                                <td style="border-top:2px solid #2DA4C4;line-height:0px;" width="56"
                                                     bgcolor="#FFF">
                                                     <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/cold-icon-85x99.png"
                                                         width="46" height="46" />
                                                 </td>
-                                                <td width="2"></td>
-                                                <td style="border-top:2px solid #F16264;" bgcolor="#FFF" align="left">
+
+
+
+                                                <td class="warmer" width="2"></td>
+                                                <td class="warmRow" style="border-top:2px solid #F16264;" bgcolor="#FFF"
+                                                    align="left">
                                                     <span style="color:#F16264;font-size:9px;">WARMEST DAY</span><br />
                                                     <span style="color:#333333;font-size:14px;font-weight:bold;">Apr
                                                         14</span>
                                                 </td>
-                                                <td style="border-top:2px solid #F16264;" bgcolor="#FFF" align="left">
+
+                                                <td class="warmRow" style="border-top:2px solid #F16264;" bgcolor="#FFF"
+                                                    align="left">
                                                     <span style="color:#F16264;font-size:9px;">Daily Avg</span><br />
                                                     <span style="color:#333333;font-size:14px;font-weight:bold;">58
                                                         &#176;F</span>
@@ -93,6 +188,7 @@
                                                     <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/hot-icon-85x99.png"
                                                         width="46" height="46" />
                                                 </td>
+                                                <!-- </div> -->
                                             </tr>
                                         </table>
                                     </td>
@@ -105,224 +201,250 @@
 
 
                             <!-- Installation table -->
-                            <table width="560" align="center" style="margin-top:20px;">
+                            <table align="center" style="margin-top:20px;">
                                 <tr>
                                     <td width="370">
+
+
+
                                         <!-- Parameters table -->
-                                        <table width="100%">
-                                            <!-- BTUs -->
-                                            <tr>
-                                                <td class="btm">
-                                                    <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/bucket-of-btus_trans.png"
-                                                        width="45" height="60" />
-                                                </td>
+                                        <table class="param" width="100%">
 
-                                                <td class="btm">
-                                                    <span class="exp">TOTAL
-                                                        HEATING BTUs this Month (Thousands)</span>
-                                                    </span>
-                                                    <br>
+                                            <div class="has-background-white-ter">
 
-                                                    <span class="displayNum"> 9,681 </span>
-                                                    <span style="color:#676766;font-size:11px;font-weight:bold"> </span>
-                                                    <span style="color:#F16264;font-size:11px;font-weight:bold"> </span>
-
-                                                    <!-- Small Stats -->
-                                                    <span style="color:#2DA4C4;font-size:11px;font-weight:bold">Down
-                                                        -35%
-                                                    </span>
-                                                    <span style="font-size:11px;color:#676766;font-weight:bold;">from
-                                                        last
-                                                        month</span>
-
-                                                    <span>
-
-                                                        <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#BTUs-for-Period"
-                                                            target="_blank">
-                                                            <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
-                                                                width="20" height="20" />
-                                                        </a>
-
-                                                </td>
-
-                                                <td width="120" class="btm">
-                                                    <span style="font-size:10px;color:#676766;">Equivalent Fuel
-                                                        Oil</span><br />
+                                                <!-- BTUs -->
+                                                <tr class="has-background-white-ter">
+                                                    <td style="text-align: center;">
+                                                        <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/bucket-of-btus_trans.png"
+                                                            width="45" height="60" />
+                                                    </td>
 
 
-                                                    <span style="font-size:15px;color:#676766;font-weight:bold;">70
-                                                    </span>
-                                                    <span class="ten"> gallons </span><img
-                                                        src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/th-oil.png"
-                                                        width="15" height="24" />
-                                                    <br>
+                                                    <td>
+                                                        <span class="exp">TOTAL HEATING BTUs</span>
+                                                        </span>
+                                                        <br>
 
-                                                    <span class="ten">Equivalent
-                                                        Electric</span><br />
-                                                    <span style="font-size:15px;color:#676766;font-weight:bold;">
-                                                        2,832</span><span style="font-size:10px;color:#676766;">
-                                                        kWh</span>
+                                                        <!-- Data -->
+                                                        <span class="displayNum"> 9,681 </span>
+                                                        <span style="color:#676766;font-size:11px;font-weight:bold">
+                                                        </span>
+                                                        <span style="color:#F16264;font-size:11px;font-weight:bold">
+                                                        </span>
 
-                                                    <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/th-electric.png"
-                                                        width="15" height="24" />
-                                                    <br>
+                                                        <!-- Small Stats -->
+                                                        <span style="color:#2DA4C4;font-size:11px;font-weight:bold">Down
+                                                            -35%
+                                                        </span>
+                                                        <span
+                                                            style="font-size:11px;color:#676766;font-weight:bold;">from
+                                                            last
+                                                            month</span>
 
-                                                </td>
-                                                <td width="20" class="btm"></td>
-                                            </tr>
-                                            <!-- Climate -->
-                                            <tr>
-                                                <td class="btm">
-                                                    <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/snowflake_trans.png"
-                                                        width="50" height="50" />
-                                                </td>
+                                                        <span>
 
-                                                <td class="btm">
-                                                    <span class="exp">MEAN DAILY
-                                                        TEMPERATURE this Month (&#176;F)</span>
-                                                    <br>
+                                                            <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#BTUs-for-Period"
+                                                                target="_blank">
+                                                                <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
+                                                                    width="20" height="20" />
+                                                            </a>
 
-                                                    <span class="displayNum">
-                                                        44&#176;
-                                                    </span>
-
-                                                    <span style="color:#F16264;font-size:11px;font-weight:bold">
-                                                        17&#176;
-                                                        WARMER</span>
-                                                    <span style="color:#2DA4C4;font-size:11px;font-weight:bold"> </span>
-                                                    <span style="font-size:11px;color:#676766;font-weight:bold;">than
-                                                        last
-                                                        month</span>
-
-                                                    <span class="exp">
-                                                        <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#Heating-Degree-Days"
-                                                            target="_blank">
-                                                            <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
-                                                                width="20" height="20" />
-                                                        </a>
-                                                    </span>
-                                                </td>
-
-                                                <td class="btm">
-                                                    <span class="ten">Heating Degree Days to
-                                                        Date</span><br />
-                                                    <span
-                                                        style="font-size:15px;color:#676766;font-weight:bold;">6,359</span><br>
-
-                                                    <span class="ten">Heating Degree Days Last
-                                                        Year</span><br />
-                                                    <span
-                                                        style="font-size:15px;color:#676766;font-weight:bold;">6,749</span><br />
-                                                </td>
-
-                                                <td class="btm"></td>
-                                            </tr>
-                                            <!-- Operating Costs and Savings -->
-                                            <tr>
-
-                                                <td class="btm">
-                                                    <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/electricityIcon.png"
-                                                        width="45" height="40" /></td>
-                                                <td class="btm">
-                                                    <span style="font-size:11px;color:#676766;font-weight:bold;">TOTAL
-                                                        OPERATING COST this
-                                                        Month</span><br />
-                                                    <span class="displayNum">
-                                                        $90
-                                                    </span>
-
-                                                    <span style="color:#676766;font-size:14px;font-weight:bold">$55
-                                                        less</span>
-                                                    <span style="color:#676766;font-size:11px;font-weight:bold">than
-                                                        last
-                                                        month</span>
-                                                    <span class="exp">
-                                                        <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#Operating-Costs"
-                                                            target="_blank">
-                                                            <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
-                                                                width="20" height="20" align="bottom" />
-                                                        </a>
-                                                    </span>
-
-                                                </td>
-
-                                                <td>
-                                                    <span class="ten">Savings over
-                                                        Oil</span><br />
-
-                                                    <span style="font-size:15px;color:#676766;font-weight:bold;">
-                                                        $161
-                                                    </span>
-                                                    <span style="font-size:10px;color:#676766;"> </span><br />
-                                                    <span style="font-size:10px;color:#676766;">Savings over
-                                                        Electric</span><br />
-                                                    <span style="font-size:15px;color:#676766;font-weight:bold;">
-                                                        $441
-                                                    </span>
-                                                    <span class="ten"></span>
-                                                </td>
-                                                <td></td>
-                                            </tr>
+                                                    </td>
 
 
-                                            <!-- Carbon Offsets -->
-                                            <tr>
-                                                <td width="70">
-                                                    <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/tree.png"
-                                                        width="45" height="60" />
-                                                </td>
 
-                                                <td width="160">
-                                                    <span style="font-size:11px;color:#676766;font-weight:bold;">CARBON
-                                                        OFFSETS since Mar 17,
-                                                        2012</span><br />
-                                                    <span
-                                                        style="font-size:32px;color:#343333;font-weight:bold;white-space:nowrap;">
-                                                        16.58
-                                                    </span>
-                                                    <span style="font-size:11px;color:#676766;font-weight:bold;">Metric
-                                                        Tons</span>
-                                                    <span class="displayNum">
-                                                        <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#Carbon-Offsets"
-                                                            target="_blank">
-                                                            <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
-                                                                width="20" height="20" border="0" align="bottom" />
-                                                        </a>
-                                                    </span>
-                                                </td>
+                                                    <td width="120" class="extraStat">
+                                                        <span style="font-size:10px;color:#676766;">Equivalent Fuel
+                                                            Oil</span>
+                                                        <br>
 
-                                                <td width="120">
-                                                    <span class="ten">Miles Not
-                                                        Driven</span><br />
-                                                    <span style="font-size:15px;color:#676766;font-weight:bold;">
-                                                        39,474
-                                                    </span>
-                                                    <span class="ten"></span><br />
-                                                    <span class="fteen">Trees Planted</span><br />
-                                                    <span style="font-size:15px;color:#676766;font-weight:bold;">
-                                                        425
-                                                    </span>
 
-                                                </td>
-                                                <td width="20"></td>
-                                            </tr>
+                                                        <span style="font-size:15px;color:#676766;font-weight:bold;">70
+                                                        </span>
+                                                        <span class="ten"> gallons </span><img
+                                                            src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/th-oil.png"
+                                                            width="15" height="24" />
+                                                        <br>
+
+                                                        <span class="ten">Equivalent Electric</span><br />
+                                                        <span style="font-size:15px;color:#676766;font-weight:bold;">
+                                                            2,832</span><span style="font-size:10px;color:#676766;">
+                                                            kWh</span>
+
+                                                        <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/th-electric.png"
+                                                            width="15" height="24" />
+                                                        <br>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <!-- Climate -->
+                                                <tr class="has-background-white-ter">
+
+                                                    <td class="btm icon">
+                                                        <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/snowflake_trans.png"
+                                                            width="50" height="50" />
+                                                    </td>
+
+
+                                                    <td class="desc">
+                                                        <span class="exp">MEAN DAILY
+                                                            TEMPERATURE(&#176;F)</span>
+                                                        <br>
+
+                                                        <span class="displayNum">
+                                                            44&#176;
+                                                        </span>
+
+                                                        <span style="color:#F16264;font-size:11px;font-weight:bold">
+                                                            17&#176;
+                                                            WARMER</span>
+                                                        <span style="color:#2DA4C4;font-size:11px;font-weight:bold">
+                                                        </span>
+                                                        <span
+                                                            style="font-size:11px;color:#676766;font-weight:bold;">than
+                                                            last
+                                                            month</span>
+
+                                                        <span class="exp">
+                                                            <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#Heating-Degree-Days"
+                                                                target="_blank">
+                                                                <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
+                                                                    width="20" height="20" />
+                                                            </a>
+                                                        </span>
+                                                    </td>
+
+                                                    <td class="extraStat">
+                                                        <span class="ten">Heating Degree Days to
+                                                            Date</span><br />
+
+                                                        <span
+                                                            style="font-size:15px;color:#676766;font-weight:bold;">6,359</span><br>
+
+                                                        <span class="ten">Heating Degree Days Last
+                                                            Year</span><br />
+                                                        <span
+                                                            style="font-size:15px;color:#676766;font-weight:bold;">6,749</span><br />
+                                                    </td>
+
+                                                    <!-- <td class="btm"></td> -->
+                                                </tr>
+
+
+                                                <!-- Operating Costs and Savings -->
+                                                <tr class="has-background-white-ter">
+                                                    <td class="btm">
+                                                        <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/electricityIcon.png"
+                                                            width="45" height="40" /></td>
+
+                                                    <td>
+                                                        <span
+                                                            style="font-size:11px;color:#676766;font-weight:bold;">TOTAL
+                                                            OPERATING COST </span><br />
+
+                                                        <span class="displayNum">
+                                                            $90
+                                                        </span>
+
+                                                        <span style="color:#676766;font-size:14px;font-weight:bold">$55
+                                                            less</span>
+                                                        <span style="color:#676766;font-size:11px;font-weight:bold">than
+                                                            last
+                                                            month</span>
+                                                        <span class="exp">
+                                                            <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#Operating-Costs"
+                                                                target="_blank">
+                                                                <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
+                                                                    width="20" height="20" align="bottom" />
+                                                            </a>
+                                                        </span>
+
+                                                    </td>
+
+                                                    <td class="extraStat">
+                                                        <span class="ten">Savings over
+                                                            Oil</span><br />
+
+                                                        <span style="font-size:15px;color:#676766;font-weight:bold;">
+                                                            $161
+                                                        </span>
+
+                                                        <span class="ten">Savings over
+                                                            Electric</span><br />
+                                                        <span style="font-size:15px;color:#676766;font-weight:bold;">
+                                                            $441
+                                                        </span>
+
+                                                    </td>
+                                                </tr>
+
+
+
+                                                <!-- Carbon Offsets -->
+                                                <tr class="has-background-white-ter">
+                                                    <td class="btm" width="70" style="text-align: center;">
+                                                        <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/tree.png"
+                                                            width="45" height="60" />
+                                                    </td>
+
+                                                    <td width="160">
+                                                        <span
+                                                            style="font-size:11px;color:#676766;font-weight:bold;">CARBON
+                                                            OFFSETS since Mar 17,
+                                                            2012</span><br />
+                                                        <span
+                                                            style="font-size:32px;color:#343333;font-weight:bold;white-space:nowrap;">
+                                                            16.58
+                                                        </span>
+                                                        <span
+                                                            style="font-size:11px;color:#676766;font-weight:bold;">Metric
+                                                            Tons</span>
+                                                        <span class="displayNum">
+                                                            <a href="http://www.groundenergysupport.com/wp/email-report-explanation/#Carbon-Offsets"
+                                                                target="_blank">
+                                                                <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/info-2-24.png"
+                                                                    width="20" height="20" border="0" align="bottom" />
+                                                            </a>
+                                                        </span>
+                                                    </td>
+
+                                                    <td class="extraStat" width="120">
+                                                        <span class="ten">Miles Not
+                                                            Driven</span><br />
+                                                        <span style="font-size:15px;color:#676766;font-weight:bold;">
+                                                            39,474
+                                                        </span>
+                                                        <span class="ten"></span><br />
+                                                        <span class="fteen">Trees Planted</span><br />
+                                                        <span style="font-size:15px;color:#676766;font-weight:bold;">
+                                                            425
+                                                        </span>
+
+                                                    </td>
+                                                </tr>
                                 </tr>
                             </table>
+
+
+                            </div>
 
                             <!-----Table for Dashboard Button ------->
                             <table cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td width="175">
-                                    </td>
+                                    <!-- <td width="175">
+                                    </td> -->
                                     <td bgcolor="#fff" width="350">
                                         <a href="http://www.groundenergysupport.com/console/dashboard/45"
                                             target="_blank">
-                                            <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/gxtrackerdashboard.png"
+                                            <img class="visit"
+                                                src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/gxtrackerdashboard.png"
                                                 width="323" height="32" align="center" />
                                         </a>
                                     </td>
-                                    <td width="75">
-                                    </td>
+                                    <!-- <td width="75">
+                                    </td> -->
                                 </tr>
                             </table>
                             <!-- Footer Table -->
@@ -330,14 +452,17 @@
 
                         <td width="40">
                         </td>
+
+                        <!-- lil logo -->
                         <td>
-                            <img src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/groundsynergy.jpg"
+                            <img class="lilLogo"
+                                src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/groundsynergy.jpg"
                                 width="55" height="45" />
                         </td>
                         <td width="50">
                         </td>
 
-                        <td>
+                        <td class="disclaimer">
                             This email was sent to the email addresses: ['drwes@comcast.net'] , on file as email
                             contacts.
                             If you are

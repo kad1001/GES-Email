@@ -1,29 +1,21 @@
 body {
-    margin: 0px;
+    /* margin-left: 20px; */
     align-content: center;
     padding: 1%;
 }
 .header {
     font-size: 22px;
-    /* float: left; */
     font-weight: bold;
     color: #343333;
 }
 
-td {
-    background-color: #F9F9F9;
-    text-align: center;
-    /* align-content: center; */
-    font-family: Helvetica, 'Lucinda Grande', sans-serif;
-    /* padding: 1%; */
-    border-bottom:5px solid #fff;
+.has-background-white-ter {
+    background-color: hsl(0, 0%, 96%)
 }
-
 
 .btm {
-    border-bottom:5px solid #fff;
+    text-align: center;
 }
-/* Font */
 
 .grey {
     color: #959595;
@@ -38,6 +30,12 @@ td {
     font-weight: bold;
     white-space: nowrap;
 }
+
+
+.sixWide {
+    width: 600px;
+}
+
 
 .ten {
     font-size: 10px;
@@ -62,7 +60,7 @@ td {
 
 .coldBar {
     border-top: 2px solid #2da4c4;
-    float: left;
+    /* float: left; */
 }
 
 .warm {
@@ -72,7 +70,7 @@ td {
 
 .warmBar {
     border-top: 2px solid #f16264;
-    float: left; 
+    /* float: left;  */
     width: 56px;
 }
 
