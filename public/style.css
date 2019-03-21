@@ -1,13 +1,8 @@
 body {
-    background-color: #F9F9F9;
+    margin: 0px;
+    align-content: center;
+    padding: 1%;
 }
-
-table {
-    background-color: #f1f1f1;
-    text-align: center;
-    width: 600px;
-}
-
 .header {
     font-size: 22px;
     /* float: left; */
@@ -18,9 +13,16 @@ table {
 td {
     background-color: #F9F9F9;
     text-align: center;
+    /* align-content: center; */
     font-family: Helvetica, 'Lucinda Grande', sans-serif;
+    /* padding: 1%; */
+    border-bottom:5px solid #fff;
 }
 
+
+.btm {
+    border-bottom:5px solid #fff;
+}
 /* Font */
 
 .grey {
@@ -35,6 +37,16 @@ td {
     color: #343333;
     font-weight: bold;
     white-space: nowrap;
+}
+
+.ten {
+    font-size: 10px;
+    color: #676766;
+}
+
+.fteen {
+    font-size: 15px;
+    color: #676766;
 }
 
 /* Temperatures / Top Bar */
@@ -75,4 +87,11 @@ td {
 .tempIcon {
     width: 46px;
     height: 46px;
+}
+
+.exp {
+    font-size:12px;
+    color:#343333;
+    font-weight:bold;
+    white-space:nowrap;
 }
