@@ -1,6 +1,6 @@
 body {
-    /* margin-left: 20px; */
-    align-content: center;
+    font-family:helvetica,'lucinda grande',sans-serif;
+    /* align-content: center; */
     padding: 1%;
 }
 .header {
@@ -31,7 +31,6 @@ body {
     white-space: nowrap;
 }
 
-
 .sixWide {
     width: 600px;
 }
@@ -53,6 +52,11 @@ body {
     height: 96px;
 }
 
+
+
+.flex {
+    display: block;
+}
 .cold {
     color: #2da4c4;
     font-size: 9px;
@@ -60,7 +64,6 @@ body {
 
 .coldBar {
     border-top: 2px solid #2da4c4;
-    /* float: left; */
 }
 
 .warm {
@@ -70,8 +73,10 @@ body {
 
 .warmBar {
     border-top: 2px solid #f16264;
-    /* float: left;  */
-    width: 56px;
+}
+
+.noLine {
+    line-height: 0%;
 }
 
 .bold {
@@ -92,4 +97,10 @@ body {
     color:#343333;
     font-weight:bold;
     white-space:nowrap;
+}
+
+.logo {
+    width: 160px;
+    height: 56px;
+    float: right;
 }
