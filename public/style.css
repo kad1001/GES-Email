@@ -46,6 +46,10 @@ body {
     color: #676766;
 }
 
+.plusBold {
+    font-weight: bold;
+}
+
 /* Temperatures / Top Bar */
 .house {
     width: 96px; 
@@ -69,6 +73,12 @@ body {
 .warm {
     color: #f16264;
     font-size: 9px;
+}
+
+.smallFont {
+    font-size:11px;
+    color:#676766;
+    font-weight:bold;
 }
 
 .warmBar {
