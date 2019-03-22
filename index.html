@@ -8,9 +8,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./public/style.css">
     <title>Email Template</title>
-    <!-- Bulma -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>  -->
 </head>
 
 <style>
@@ -55,8 +52,7 @@
         }
 
         .visit {
-            margin-left: auto;
-            margin-right: auto;
+            justify-content: center;
         }
 
         .disclaimer {
@@ -66,7 +62,8 @@
         }
 
         .lilLogo {
-            display: none
+            display: block;
+            float: none;
         }
 
         .house {
@@ -390,36 +387,25 @@
         </tr>
     </table>
 
-    <!-----Table for Dashboard Button ------->
-    <table cellspacing="0" cellpadding="0">
-        <tr>
-            <td width="350">
-                <a href="http://www.groundenergysupport.com/console/dashboard/45" target="_blank">
-                    <img class="visit"
-                        src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/gxtrackerdashboard.png"
-                        width="323" height="32" align="center" />
-                </a>
-            </td>
-        </tr>
-    </table>
     <!-- Footer Table -->
-    <table cellspacing="0" cellpadding="0" style="margin-top:10px">
-
+    <table cellspacing="0" cellpadding="0" style="margin-top:10px" width="100%">
+            <button id="dash">Visit Your GxTracker Dashboard</button>
         <!-- lil logo -->
-        <td width="100px">
+        <td width="25%">
             <img class="lilLogo"
                 src="http://www.groundenergysupport.com/wp/wp-content/themes/groundenergy/images/interface/groundsynergy.jpg"
-                width="55" height="45" />
+                 />
         </td>
-
-        <td class="disclaimer">
+<br>
+        <td class="ten">
             This email was sent to the email addresses: ['drwes@comcast.net'] , on file as email
             contacts.
             If you are
             <strong>not interested</strong> in receiving email updates or would like to update the list,
             please <a style="color: #3d94f5; font-weight: bold; text-decoration: none;"
-                href="mailto:info@groundenergysupport.com">email us</a>
-
+                href="mailto:info@groundenergysupport.com">email us.</a>
+<br>
+<br>
             Ground Energy Support, LLC
         </td>
 

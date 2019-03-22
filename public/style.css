@@ -114,3 +114,25 @@ body {
     height: 56px;
     float: right;
 }
+
+.lilLogo {
+    width: 55px;
+    height: 45px;
+    padding-left: 20%
+}
+
+/* Dashboard button */
+#dash {
+    background-image: linear-gradient(to bottom, #FB9159, #9C442C);
+    color: white;
+    /* font-weight: bold; */
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    text-shadow: 2px 2px #9C442C;
+    border-radius: 5px;
+    font-size: 15px;
+    /* margin-left: 10%; */
+    /* box-shadow: 20px 20px 20px #9C442C; */
+}
